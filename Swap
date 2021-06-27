@@ -1,0 +1,46 @@
+import java.util.*;
+
+import java.util.Scanner;
+
+ // Compiler version JDK 11.0.2
+
+ class Swapping
+
+ {
+
+   public static void main(String args[])
+
+   { 
+
+     Scanner ac= new Scanner(System.in);
+
+    System.out.println("enter 2 values");
+
+    int a,b;
+
+    a= ac.nextInt();
+
+    b= ac.nextInt();
+
+    System.out.println("before swapping");
+
+    System.out.println("a="+a);
+
+    System.out.println("b="+b);
+
+    a=a+b;
+
+    b=a-b;
+
+    a=a-b;
+
+    System.out.println("after swapping");
+
+    System.out.println("a="+a);
+
+    System.out.println("b="+b);
+
+   }
+
+ }
+
