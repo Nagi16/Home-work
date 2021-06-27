@@ -1,0 +1,51 @@
+import java.util.*;
+
+ 
+
+ class Largestnumber
+
+ {
+
+   public static void main(String args[])
+
+   { 
+
+    Scanner sc= new Scanner(System.in);
+
+    System.out.println("Enter 4 different values");
+
+    int a=sc.nextInt();
+
+    int b=sc.nextInt();
+
+    int c=sc.nextInt();
+
+    int d=sc.nextInt();
+
+   
+
+   if((a>b)&&(a>c)&&(a>d))
+
+   System.out.println(a+" is big");
+
+   else if((b>a)&&(b>c)&&(b>d))
+
+   System.out.println(b+" is big");
+
+   else if((c>a)&&(c>b)&&(c>d))
+
+   System.out.println(c+" is big");
+
+  else if((d>a)&&(d>b)&&(d>c))
+
+   System.out.println(d+" is big");
+
+   else
+
+   System.out.println("you entered largest number more than 1 time");
+
+   
+
+   }
+
+ }
