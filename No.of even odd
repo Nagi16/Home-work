@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+ class no_of_evevodd
+
+ {
+
+   public static void main(String args[])
+
+   { 
+
+     Scanner sc=new Scanner(System.in);
+
+     System.out.println("Enter a number:");
+
+    int n=sc.nextInt();
+
+        int c = 0, d = 0, r = 0;
+
+        while (n != 0) {
+
+            r = n % 10;
+
+            if (r % 2 == 0) {
+
+                c++;
+
+            }
+
+            else
+
+                d++;
+
+            n=n/10;
+
+        }
+
+        System.out.println("number of even digits is " +c);
+
+        System.out.println("number of odd digits is " +d);
+
+    }
+
+}
