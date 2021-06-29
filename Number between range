@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+ class evennumbers
+
+ {
+
+   public static void main(String args[])
+
+   { 
+
+    System.out.println("Enter lower boundary:");
+
+    Scanner sc= new Scanner(System.in);
+
+    int a=sc.nextInt();
+
+    System.out.println("Enter upper boundary:");
+
+    int b=sc.nextInt();
+
+    int i=b;
+
+    while(i>=a){
+
+      if(i%2==0)
+
+      System.out.print(i+", ");
+
+      i--;
+
+    }
+
+   }
+
+ }
