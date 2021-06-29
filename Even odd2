@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+class subtle
+
+ {
+
+   static int reverse(int u){
+
+     int rem=0,sum=0;
+
+     while(u>0){
+
+       rem=u%10;
+
+       sum=(sum*10)+rem;
+
+       u=u/10;
+
+     }
+
+     return sum;
+
+   }
+
+   
+
+   public static void main(String args[])
+
+   { 
+
+     Scanner sc=new Scanner(System.in);
+
+     System.out.println("Enter a number:");
+
+    int n=sc.nextInt();
+
+        int c = 0, d = 0, r = 0;
+
+        while (n != 0) {
+
+            r = n % 10;
+
+            if (r % 2 == 0) {
+
+                c=(c*10)+r;
+
+            }
+
+            else
+
+                d=(d*10)+r;
+
+            n=n/10;
+
+        }
+
+        
+
+       
+
+        System.out.println("even digits:" +reverse(c));
+
+        System.out.println("odd digits:" +reverse(d));
+
+    }
+
+}
